@@ -113,10 +113,6 @@ REPORT_RUN_RESULTS=evaluation/runs/某次运行/results.json npm run report:buil
 
 `submission/`是给审阅者看的报告；`docs/sources/`用于维护和重新生成报告。截图和架构图均使用仓库内相对链接。原始测试数据与运行文件保留原路径，便于复查。
 
-本地还有被Git忽略的`.env.local`、`private/`、`node_modules/`和`.next/`。`private/`保存原始挑战PDF与旧HTML导出，**不属于上传内容**。如果通过网页手动上传，请使用整理好的提交压缩包内容，不要上传这些本地文件。
-
 ## 公开Demo与仓库
 
 公开部署使用`NEXT_PUBLIC_DEMO_ONLY=1`，界面只提供固定示例，服务器也拒绝实时生成请求。公开环境不配置OpenAI密钥。本地不设置此变量即可使用实时Agent。
-
-仓库：[yangqy03/client-advisor-assistant](https://github.com/yangqy03/client-advisor-assistant)。`private/`、`.env.local`、依赖和构建文件已被忽略，不要强制加入。Vercel发布包仅包含运行应用所需的源码和依赖清单，不包含挑战原文、评测记录或密钥。尚未发送任何邮件。
