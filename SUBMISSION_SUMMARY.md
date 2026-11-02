@@ -4,7 +4,7 @@
 
 我已完成客户顾问沟通助手，以下为提交材料与演示入口：
 
-- GitHub仓库：[客户顾问沟通助手](https://github.com/yangqy03/client-advisor-assistant)
+- GitHub仓库：[客户顾问沟通助手](https://github.com/yangqy03/client-assistant)
 - 在线Demo：[客户顾问沟通助手](https://client-advisor-assistant.vercel.app)
 - 报告导航：[提交目录](submission/README.md)
 
