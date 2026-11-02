@@ -1,0 +1,29 @@
+{
+  "appVersion": "0.1.4",
+  "timestamp": "2026-11-02T18:19:27.499Z",
+  "input": {
+    "scenario": "recommendation",
+    "name": "林女士",
+    "client": "偏好简洁设计与低饱和色。正在寻找通勤手袋，希望轻便、方便搭配。",
+    "history": "客户：最近想看看通勤用的包，简单一点就好。\n顾问：好的，我留意一下适合您日常使用的款式。",
+    "product": "折影手袋｜雾灰｜小牛皮｜人民币 8,600 元。\n尺寸：28 × 20 × 11 cm。可手提或肩背。\n库存尚未确认；没有已批准的折扣。\n已确认养护：用柔软干布轻拭，避免长时间接触水。",
+    "context": "客户希望找一只适合日常通勤、设计简洁的手袋。",
+    "contactAllowed": true,
+    "mode": "live"
+  },
+  "httpStatus": 502,
+  "response": {
+    "error": "模型请求失败、超时或输出解析失败。请检查服务器配置后重试。",
+    "version": "0.1.4",
+    "trace": [
+      {
+        "attempt": 1,
+        "elapsedMs": 1643,
+        "status": "provider_or_schema_error",
+        "issues": [
+          "模型请求失败、超时或输出解析失败"
+        ]
+      }
+    ]
+  }
+}

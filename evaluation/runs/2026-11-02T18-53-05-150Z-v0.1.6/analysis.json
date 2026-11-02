@@ -1,0 +1,66 @@
+{
+  "runId": "2026-11-02T18-53-05-150Z-v0.1.6",
+  "appVersion": "0.1.6",
+  "model": "gpt-6.1-sol",
+  "totalInputs": 50,
+  "recordedCases": 48,
+  "policyCases": 2,
+  "errors": 0,
+  "pending": 0,
+  "clientDrafts": 144,
+  "internalNotes": 6,
+  "schemaAndHeuristicPassCases": 48,
+  "generationAttempts": 48,
+  "rejectedAttempts": 0,
+  "casesWithRepair": 0,
+  "usage": {
+    "inputTokens": 54810,
+    "outputTokens": 6709,
+    "cachedInputTokens": 0,
+    "attemptsWithUsage": 48
+  },
+  "latencyMs": {
+    "median": 4167,
+    "p95": 5861,
+    "max": 6200
+  },
+  "scenarioCounts": [
+    {
+      "scenario": "生日与节日",
+      "total": 8,
+      "recorded": 8,
+      "policy": 0
+    },
+    {
+      "scenario": "产品推荐",
+      "total": 9,
+      "recorded": 9,
+      "policy": 0
+    },
+    {
+      "scenario": "购后关怀",
+      "total": 8,
+      "recorded": 8,
+      "policy": 0
+    },
+    {
+      "scenario": "久别问候",
+      "total": 8,
+      "recorded": 7,
+      "policy": 1
+    },
+    {
+      "scenario": "活动邀约",
+      "total": 8,
+      "recorded": 7,
+      "policy": 1
+    },
+    {
+      "scenario": "价格异议",
+      "total": 9,
+      "recorded": 9,
+      "policy": 0
+    }
+  ],
+  "qualityJudgment": "这些是自动运行/格式统计，不是文案质量评分。AI辅助内容评审另存。"
+}

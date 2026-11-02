@@ -1,0 +1,48 @@
+digraph AdvisorArchitecture {
+  graph [rankdir=TB, bgcolor="#ffffff", pad="0.4", nodesep="0.4", ranksep="0.52", splines=polyline, fontname="Helvetica", fontsize=20, label="Client Advisor Assistant | System Architecture", labelloc=t];
+  node [shape=box, style="rounded,filled", fillcolor="#f4f6f0", color="#b1bead", fontname="Helvetica", fontcolor="#263d33", fontsize=14, margin="0.18,0.12", penwidth=1.2];
+  edge [color="#738373", fontname="Helvetica", fontcolor="#536a56", fontsize=12, arrowsize=0.7, penwidth=1.1];
+  ui [label="Client Advisor Workspace\nSix scenarios | Fictional inputs", fillcolor="#e4ecdf"];
+  api [label="Same-origin Generation API\nInput schema and request-size checks"];
+  consent [label="Contact allowed?", shape=diamond, style=filled, fillcolor="#fff7e7", color="#c8b684"];
+  stop [label="Three internal abstention notes\nSkip model | Disable copying", fillcolor="#fff7e7", color="#c8b684"];
+  mode [label="Generation mode", shape=diamond, style=filled, fillcolor="#fff7e7", color="#c8b684"];
+  sample [label="Curated Sample Mode\nMatch fixtures and validate format\nOtherwise use generic samples"];
+  agent [label="Bounded Drafting Agent\nServer-side key, instructions and context", fillcolor="#e4ecdf"];
+  model [label="OpenAI Responses API\nGPT-6.1 Sol | Low reasoning\nUp to 1,800 output tokens per call"];
+  check [label="Output Validation\nThree Chinese drafts | Length and duplicates\nLimited prohibited-claim checks"];
+  repair [label="Regenerate with validation feedback\nAt most one repair\nShared 45-second timeout", fillcolor="#fff7e7", color="#c8b684"];
+  failure [label="Visible Error\nNo sample fallback", fillcolor="#fff0eb", color="#c7a89b"];
+  drafts [label="Three Candidate Drafts\nProvenance, version and attempt trace", fillcolor="#e4ecdf"];
+  human [label="Advisor Review and Editing\nNo automatic message sending"];
+  export [label="Local JSON Export\nInputs, outputs and attempt records"];
+  cases [label="50 Frozen Test Inputs\nDataset 1.0.0", fillcolor="#eef3f8", color="#a4b7c8"];
+  runner [label="Evaluation Harness\nCalls the same generation API", fillcolor="#eef3f8", color="#a4b7c8"];
+  records [label="Versioned Results and Failures\nInput / prompt snapshots and hashes", fillcolor="#eef3f8", color="#a4b7c8"];
+  ui -> api -> consent;
+  consent -> stop [label="No"];
+  consent -> mode [label="Yes"];
+  mode -> sample [label="Sample"];
+  mode -> agent [label="Live"];
+  agent -> model -> check;
+  check -> drafts [label="Valid"];
+  check -> repair [label="First failure"];
+  repair -> agent [label="Repair", constraint=false];
+  check -> failure [label="Second failure"];
+  model -> failure [label="Provider / schema error", constraint=false];
+  sample -> drafts [label="Sample output", minlen=2];
+  drafts -> human;
+  drafts -> export;
+  stop -> ui [label="Internal notes", constraint=false, style=dashed];
+  failure -> ui [label="Error", constraint=false, style=dashed];
+  drafts -> ui [label="Display drafts", constraint=false, style=dashed];
+  cases -> runner;
+  runner -> api [label="Local API", constraint=false, color="#8199b0"];
+  runner -> records [color="#8199b0"];
+  {rank=same; cases; ui;}
+  {rank=same; runner; api;}
+  {rank=same; stop; mode;}
+  {rank=same; repair; drafts; failure;}
+  note [label="No RAG, web tools or persistent memory\nThe model drafts; application code enforces controls", shape=plaintext, style="", fontcolor="#6b766b", fontsize=12];
+  human -> note [style=invis];
+}

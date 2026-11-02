@@ -1,0 +1,24 @@
+flowchart TD
+    UI[Client Advisor Workspace - Six scenarios] --> API[Same-origin API - Input validation]
+    API --> CONTACT{Contact allowed?}
+    CONTACT -->|No| STOP[Three internal abstention notes - No model call]
+    CONTACT -->|Yes| MODE{Generation mode}
+    MODE -->|Sample| FIXTURE[Fixture matching and format checks - Generic fallback]
+    MODE -->|Live| AGENT[Bounded Drafting Agent - Server key and system rules]
+    AGENT --> OPENAI[OpenAI Responses API - GPT-6.1 Sol]
+    OPENAI --> CHECK[Output schema and limited text checks]
+    CHECK -->|Valid| DRAFT[Three drafts - Provenance and attempt trace]
+    CHECK -->|First failure| REPAIR[Validation feedback - At most one repair]
+    REPAIR --> AGENT
+    CHECK -->|Second failure| ERROR[Visible error - No sample fallback]
+    OPENAI -->|Provider or schema error| ERROR
+    FIXTURE -->|Valid sample| DRAFT
+    FIXTURE -->|Invalid sample| ERROR
+    STOP --> UI
+    DRAFT --> UI
+    ERROR --> UI
+    DRAFT --> HUMAN[Advisor review and editing - No automatic sending]
+    DRAFT --> EXPORT[Local JSON export]
+    DATA[50 frozen test inputs] --> RUNNER[Evaluation harness]
+    RUNNER --> API
+    RUNNER --> RECORD[Versioned results - Snapshots and hashes]

@@ -1,0 +1,9 @@
+{
+  "applicationVersion": "0.1.4",
+  "model": "gpt-5.4-mini",
+  "status": "blocked",
+  "httpStatus": 429,
+  "providerCode": "credit_balance_exhausted",
+  "credentialExposed": false,
+  "qualityEvaluation": "not_performed"
+}

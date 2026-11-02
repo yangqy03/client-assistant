@@ -1,0 +1,15 @@
+node_modules/
+.next/
+.env*
+!.env.example
+*.tsbuildinfo
+Written_Challenge_Brief.pdf
+.DS_Store
+
+.vercel/
+EVALUATION_REPORT.html
+EVALUATION_REPORT_files/
+
+# Local-only reference material and exports; never include in submission.
+private/
+*.zip

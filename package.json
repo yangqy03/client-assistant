@@ -1,0 +1,35 @@
+{
+  "name": "client-advisor-assistant",
+  "version": "0.1.6",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1",
+    "build": "next build",
+    "start": "next start --hostname 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "format": "prettier --write app lib tests",
+    "eval:prepare": "node --import tsx scripts/prepare-evaluation.ts",
+    "eval:live": "node --import tsx scripts/run-evaluation.ts",
+    "report:build": "node --import tsx scripts/build-report.ts",
+    "eval:analyze": "node --import tsx scripts/analyze-evaluation.ts"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^4.0.106",
+    "ai": "latest",
+    "lucide-react": "latest",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "prettier": "^3.9.10",
+    "tsx": "latest",
+    "typescript": "latest"
+  }
+}

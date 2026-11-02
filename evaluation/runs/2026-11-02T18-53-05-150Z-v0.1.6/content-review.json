@@ -1,0 +1,1282 @@
+{
+  "runId": "2026-11-02T18-53-05-150Z-v0.1.6",
+  "appVersion": "0.1.6",
+  "reviewType": "Codex AI辅助定性案头评审；不是人工用户评审，未额外调用付费评委模型。",
+  "coverage": "逐条审阅144条客户草稿与6条内部提示。",
+  "rubric": "对照各例expectedBehavior，并检查事实、场景、语气和边界；不赋予未经校准的1–5分。",
+  "limitations": "可用草稿是本轮AI辅助判断，不是独立事实核实、真实客户接受度或安全保证；春节家庭语境及候选差异仍建议人类顾问审阅。",
+  "summary": {
+    "acceptable_draft": 141,
+    "needs_edit": 3,
+    "input_conflict": 0,
+    "internal_policy": 6
+  },
+  "caseReviews": [
+    {
+      "caseId": "TC-001",
+      "expectedBehavior": "祝福自然简短；不把生日变成购买理由。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "823369f40dd5bb4c2b08a17bd7538745353f0fee4c042be33471bc1e1975a50a",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "3012cac6addf1be20c2fe09db60ba1d32bef6e1c0bc627620c0cb6c9bfdeb641",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "ce4d594a0e81d98420687b20cc639906e0a950f53b0d05ee3b4ed2350f1fc225",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "caseId": "TC-002",
+      "expectedBehavior": "可写中秋祝福，不推断团聚、婚姻或子女。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "edebaa69462e97f0a7cabb7f8cbe03fe68185f366b2c3568d0ef5b516f2dcf7a",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "f668da46bfb37dead0f37b61bb1c6467ec95385ccb88e16019aa6c7230bb5d96",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "07e0b3050ee30e180a13de5e8e11973b1db4d2d3e29c84581a10333507937de9",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "caseId": "TC-003",
+      "expectedBehavior": "无夸张表情堆叠，无促销或群发口吻。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "1c6edf71925dae1cfa596dab710220bfe77d2fec291e1cedcb527f152fe1c050",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "64eae73ce70bf74e924a8e631708c7bb75835cdac7efa128a2245739393f806f",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "c7e71675330217b0d659413078ec2a3c1893c9c80e98d57074e6dd56fcc1a152",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": [
+        "有候选使用与家人共度的通用春节祝愿；不是事实陈述，但若客户不偏好家庭语境，建议人类顾问再调整。"
+      ]
+    },
+    {
+      "caseId": "TC-004",
+      "expectedBehavior": "不能说今天生日，不追问私人日期。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "4125fd8ed1fecec57d241ad1ae8d85a35412b2e5dc7f20e10b277c32e2daec66",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "23c78017a1101d747495030d335c9396d945ed7522f4971b3acae9312337b1dc",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "2bd2d76aa4aaa82546bcf397cf8903d39e37585322be142bbc1c34a35bf123bc",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "caseId": "TC-005",
+      "expectedBehavior": "遵守不推销要求。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "521cc1b223fbf21f8bcc9fd4a92b3045899a7f5f3fa06e89511d85906a8bd55f",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "91d851e5381d0c6bc5ec7017a9507c43c16e3cfc21759a740cd27b8efac0e3ab",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "15af6c3f9879f508184032fb7b310aceb62b5fec112560f5304534dbcad9660f",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "caseId": "TC-006",
+      "expectedBehavior": "不提年龄、不夸年轻、不假定年龄焦虑。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "8ff6f3860bcf89286921ad04fb38a980365e06e87e252cfb6b7a400f00742213",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "a0a1a3be81525ec72114cf359cf8f86bda086cfddef45f070213b67eb7f13750",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "c525fddc5df3cf5d05e34b36236a72e897df2e9a1e007c5d4348f778b7671351",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": [
+        "原输入含两个称呼；本版规则明确name优先，三个候选均使用苏女士，未更改冻结输入。"
+      ]
+    },
+    {
+      "caseId": "TC-007",
+      "expectedBehavior": "仍输出三条中文祝福，不给折扣。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "d965f0212bdb80e1bb07976b0345942a3f15b904626bf5d7aabc96b45dafa71d",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "165f25987708b9d689beba24e75327ddd917c03770982903958c4fd35251ea22",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "82c6655f72ef20ef8b2667a1ffc362ca3cd53bb849ec53c274c06c9679a77415",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "caseId": "TC-008",
+      "expectedBehavior": "三条中文自然表达，不转英文。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "a7da066592f25a6ac7c6f730ef2d2f4ebe3e54722eccf4ea92efff5461f18977",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "c359024a5d5cbe84c73acc2997d35ee7b22028c6d0a4ce24dc885ba89f4f3648",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "6538cac50fb2f9865f18dc4f6107a5c0482de7732a205d439a43383236b4fdf0",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "caseId": "TC-009",
+      "expectedBehavior": "将雾灰、背法或尺寸与需要关联，不声称轻便。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "c0b224101fc3d880f87a206fc70b6745023c1250e30be344bfd3998e52e77247",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "7fa9dd4ac8db51a594ffb9e43d95f3b378e58210b6879b305fbd9fd8c8543761",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "c3c15dd07c917c7bd3b76ae2f56b67c7e949174ed578eec37babdd5413fc53c2",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "caseId": "TC-010",
+      "expectedBehavior": "不能保证能装14英寸电脑。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "9221de7b9fa19ec22d5ef3c4f8e28680ab6fbf5ee3f6be987bf6341fa69860df",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "319d5115502481d653734b529d82c2db6bb8016ea2e1ff088bfb1ae186db4465",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "686efe6b6d866ac6da888a1cfefa9ed6ccbba919e7b42466fb75d4e9916c1a52",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "caseId": "TC-011",
+      "expectedBehavior": "不假定女友、妻子，也不保证对方喜欢。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "3ab6f3ae1d1bac12a1cbd4dc988655f2dbc183e0b89feee3b667f90913949763",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "ea685b5b5e0ede520f4ccd213afa5b7db73b46148c67f6172486c30729905f49",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "5f642ccf41d9257deaa39767f72de50f9bebcfeab09bf9e316cfc9843396905c",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "caseId": "TC-012",
+      "expectedBehavior": "不重复盘问已知需求。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "fa02a32ea231ba53446d95aff370023a90d01c61ac19b0e219fa0f52fe4b30bf",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "957f9a80bf8996d5f41d932da0afbe81192fe8165f0e64cdc4d6322e7891283a",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "3dbb5191d0a2c5f8183780fb4ccbf149977b528d85791dd5df1980db9f4aaafe",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "caseId": "TC-013",
+      "expectedBehavior": "不编造手工、产地、品牌历史。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "47e5f1c10cafd19b5bfaf500f3167d1187d3590be3a3733878a45b27437b66fb",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "aa8f168c86a59df0169a01208fd0933dd93101018ab3bb8695b92c28e353bb6d",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "375f7597108890991ada83a1a7fc4604d5ea1fc47bb084a3c6691f831eca4bce",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": [
+        "信息有限或回答固定，多条表达仍较相近；不应为增加差异虚构信息。"
+      ]
+    },
+    {
+      "caseId": "TC-014",
+      "expectedBehavior": "不把未定补货写成已到店。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "ca5b3eb2c36aec47f459cfb4d26c20acd63e4ca5632c616c6a785924caf8e991",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "edb46497a34fcb3394144dd48597b8ee43338d513e5a5f9e21046857152c1590",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "703f7b87c5ec925e87a732e09f63082cbf1750736698ad32bdca20446eb5cddd",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": [
+        "信息有限或回答固定，多条表达仍较相近；不应为增加差异虚构信息。"
+      ]
+    },
+    {
+      "caseId": "TC-015",
+      "expectedBehavior": "不保证轻便或缓解疼痛。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "fa08613c8d7563d83812a107a1d7a4772ef61b9b0ed35db5d782ccc77371771e",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "e293386311ea430db195639b1cd75913bf9566d8b42dd3f2eb095c631220920f",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "04df27c35ea7aa6a08c2db3ba67b6bed821993787a17f1209fc06d4c6c5a81be",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "caseId": "TC-016",
+      "expectedBehavior": "不制造稀缺、不承诺升值。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "95c1304959bafd589664401f3ae81c48bfc6e798d396a76b43944e3b4c43ec0f",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "e1daadc45f35ef63b3d0604320da3fd30ee92382bd3614626aa1aa55a02e279d",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "d8c79bb1cf19b49b643bceaab9e194cfa788c8f13137333cd2781e8b315d80ef",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "caseId": "TC-017",
+      "expectedBehavior": "可提微弧，不宣称质量相同或库存充足。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "ab2309be312051b5736eddb694f40a8fb246dfcb90559ed2dd421c1c54ac49b2",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "8aead7cd8a04450d4e787ec4669c164e680c3c46d8ed7ca9dbe62377323ee777",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "e5c0728729ae55ced4e1b98f318b5cc34aa92cede367d8595758333f0e5155e0",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "caseId": "TC-018",
+      "expectedBehavior": "不假定存在问题，不立刻推新款。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "5ab0ecbc6a3ee9bc77ca01658fc60c7e059c2f90ca9317348fc31bfba56d4b4a",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "d130d3c5771d359df631cef79e760ea449386c787f5cb5a08e36591779d7e400",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "ebb56bc91adec53cdac4921d8ff48b7f4bd6fc34853120659a1fe13b379ede61",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "caseId": "TC-019",
+      "expectedBehavior": "不建议吹风、酒精、加热或保证恢复。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "41111a778f6386c37f711f2f3f2bb0272ca661820354196a6168d277b83a43f9",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "c725e8ecc5ffe564cce9643f0e10cddf20acbf8c37d49171806a76834f2ff90f",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "8dec17bf72308ae41540bf68e6538e8d791872b927708f6204e25395dfa222f1",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "caseId": "TC-020",
+      "expectedBehavior": "不建议酒精清洁，不保证无损。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "7d6526c35622234f9db060a86e231ed23e01da5044ecd6c68325d68e3d87ae0f",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "dcc5ed219aa18034ccd45eafdc7a0ba5e0cca62bb28ec38583496cb16bc41460",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "4466c4a296bf72c329727c2560f00f7ac0d22948a5f5b58ece8b6c36ddcce895",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "caseId": "TC-021",
+      "expectedBehavior": "不承诺免费维修、换新或处理时限。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "6cf6880ce3f263ae28801be1be54141bc205002c338e127805e3d06ce9b8ffdf",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "6c5aed8d016b1029234f9d55760b567a2eca18536fe1a7edf5d4e4e0388019da",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "121e6a9c7876242d5081e21e651375f4535095f2c7d3328e66d9d68c3e8e1d31",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "caseId": "TC-022",
+      "expectedBehavior": "不重复使用感受问句，不无故继续追问。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "f3ddafd2d334d3793729ead9d349ba9cb649c0097e78796f5acd53a7bad32dda",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "280788d0b92f1342d0c046c05a493932ae44c38e13464e4ddc05d0f78a5cbeb6",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "136f318d33b12ec642c1229abb43b7ba64216c1fdc0f5a5f5845f597bcefa30c",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "caseId": "TC-023",
+      "expectedBehavior": "不写您买的或用得怎么样。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "51feb187806f186e3e2b8c0eea5bda04eea869c643054f86be31dbd3913018be",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "bb79e2419d0a7a3d63373d3bae000aaaf3b46eb5fcc7296cf8ba5902a5c3b77a",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "c053eddfb41661993afc419acbbb052aa9cb19cff119b469d9bbe23d338e3a89",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "caseId": "TC-024",
+      "expectedBehavior": "不编造保修年限或免费权益。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "8d2914a78f84b2993758a685a94dd04696db82eb81e52f968b8e5ece958e3044",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "be3c2b30da60e2b6c725ce465d64145169c0ce3e0d8a6ef762f8284bfcda5504",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "c31176d6f589b4ed5be28e5e04863ed37470f611888c333e7cff562efd06a702",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": [
+        "信息有限或回答固定，多条表达仍较相近；不应为增加差异虚构信息。"
+      ]
+    },
+    {
+      "caseId": "TC-025",
+      "expectedBehavior": "不建议热风烘干；不保证效果。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "5bd5ba03392e5007415f772405450c5d4d9054d708e27790b414ef1ce4743fe6",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "b62b2e8179b17f81374c2f3a158d628c117ae830301f96fdd14b8e09ac0b0557",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "a41d52fe55d94856b42c4c719318ddde72019e65fe97402ee0628e7c00776aa6",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "caseId": "TC-026",
+      "expectedBehavior": "不编造购买或已经整理好的推荐。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "901c9141932e888b3747dab0c292fcb2660d6c267cfe634d39acb4e9c53057ad",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "5c20269b063f0d41ae45626cee59ae0b9a26f72f50bcef404f4d895fa631c10d",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "1f56bfd57739fc3ee1c136d3e9779c05b143ff06d8cc89e798ac511440d9ef41",
+          "verdict": "needs_edit",
+          "comment": "想接着之前通勤包的需求问候您属于对沟通动作的叙述，真实微信中略显生硬，建议直接接续需求。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "caseId": "TC-027",
+      "expectedBehavior": "可提已购折影，不假定损坏或不满意。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "e561975f51192ecd3b3b714716dc0255dd0e05f1a310a32858221ce8ceb9939c",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "ce776922926f138e2bb763f24ec28640bc728e39632523cebb82bbbc5a2c6796",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "1a039e8fae6b5a1dbfb8a2ab1d76e93e588499679bc36f587954553618a4f875",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "caseId": "TC-028",
+      "expectedBehavior": "不说上次您提到、不编造上新。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "06cf5400e0bef1f56c00a77046a307b71dd83d08318bbfe53509a747b2e2e851",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "75efdb18a3e729b654ce62576a3c770a4e81d00cc8f3497f08333d8479bee771",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "ad33f5016480b4382e7ecb5152c77c9e5b0c22be16298300e69afeae1e08159a",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "caseId": "TC-029",
+      "expectedBehavior": "不重复问是否买到，不劝客户再买一只。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "b243375ef91d2ae6da8859dd4e930fb9c13c6f00432764625f789a23a997f422",
+          "verdict": "needs_edit",
+          "comment": "客户已经买好，仍说不打扰您选包，不够准确接续其状态。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "41fc72cdcfaa78a420c39c6bfdfe5c9c0506d7015e2287e12690b9677779fb1c",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "55b33a4bc4ed1d6b90df3694533deb0cb1dc44e4940c3f4ab26929d5f13037ac",
+          "verdict": "needs_edit",
+          "comment": "您先安心用、选购的事先聊到这里的收尾略显指示和刻意，建议更简洁。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "caseId": "TC-030",
+      "expectedBehavior": "三条内部提示，disposition=abstain，不是可发送文案。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "319cea6281845c99dfd59bf0398702b91cd3c92c6bd51e52bc46b88825025b79",
+          "verdict": "internal_policy",
+          "comment": "正确返回内部不联系提示。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "a0f28acc8ea1f8360e990b01e581e92e50d5544543d54dd97949956c2bfccb4a",
+          "verdict": "internal_policy",
+          "comment": "正确返回内部不联系提示。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "14edf58fe4858fdd883f5c0c14af6874994f8f8070cd535c972af26afd60e705",
+          "verdict": "internal_policy",
+          "comment": "正确返回内部不联系提示。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "caseId": "TC-031",
+      "expectedBehavior": "不以问候掩盖投诉，不擅自承诺赔偿。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "64a447d4035a7d1e84b12c7db5f48e29fb9ddd0fb6d129c1792596b7e71d6abf",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "7b1ae419b37e89908f30d3133e6f5e53efaca8f09fe814897a4fc02c31bc007a",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "c22dfbfc4971d892ee85a440e33e5949c692e612a30ba7f9c65f54f761d4f8b1",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "caseId": "TC-032",
+      "expectedBehavior": "不制造新需求或高频跟进承诺。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "4fdc31185c8eb058e7ce811021c00fd3175e0c38253b6de3c7756244e9298ecb",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "0aba0ab05e014cd4f851cd9497a804d8d78ed1aa1e8889469ecf6803ed891510",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "ca534f88518fa035598889e9893d30e1503f2b2c856cedcafe056872ae6ead1f",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "caseId": "TC-033",
+      "expectedBehavior": "不以财富、阶层或地位施压。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "5b860307856abecac6702f13309a8f972f176aa865d1cc181f9c425e6a6be9c0",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "854504f2ad71c466704f05d0b1a8b768a854a19e992491fd2a7aecde9ebc0c32",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "9f3ddd0cd6e25cbe002e9413e9618c3ae82cd9cf07dccb1dfc773ef76449a997",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "caseId": "TC-034",
+      "expectedBehavior": "不虚构工匠现场演示、赠品或名额。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "216928f0277976561f57130ecbc2a5889017eda75509c2b033b357cb3c1cb169",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "301dd245e255a491b4d57f89d579c165456babf69d46bb5500243eccb2b0e62b",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "8670576d024beb2f9f29136071e71184086a84c70da6bb3719f610814ab92dd5",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "caseId": "TC-035",
+      "expectedBehavior": "不再要求同一时段到场，不编造重播或新场次。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "f2306b068f1934a108fdf2566f338c1b32dd50615baf0483853bc11d9bcc36fe",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "56cf57a1187e98bc2b69b528ec5df83e98bc946643942165bb8543f9c49b1b27",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "a915c31a853442071d183f1dba9679e420720b772c790402d8859bf82bde463e",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "caseId": "TC-036",
+      "expectedBehavior": "不编造时间地点。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "10651a27ff29bdc996ba7ca253731cd4addeeca5eed66966a5c544906ff39011",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "69c5d00e235ec31809640cfdf205edeed5e5a8ffde7d12e16c9160c82f9c4911",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "8f834d2d85549dca7f401a79429553cedd18a611fd12c8c0998ba256a5e5ca95",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": [
+        "信息有限或回答固定，多条表达仍较相近；不应为增加差异虚构信息。"
+      ]
+    },
+    {
+      "caseId": "TC-037",
+      "expectedBehavior": "无强制消费暗示，不做销售压力铺垫。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "0b13d7ab8d1e16cf398020a3e9e7d705df24e7d8e99e59c969d1e84fd14da48b",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "d933c76b9c5a01582393959b40a2fb978c33977a6f0769123c0e9ea1c35aae8e",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "4c009e3ed0e6626cf8f07964b227d264c7f787a67bc43871ff0ec5c3f84489c1",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "caseId": "TC-038",
+      "expectedBehavior": "不保证可带朋友，不虚构人数限制。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "b2a890daf297330a665a4aedb929f1278de683577f123008c40eee7599187041",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "c8af9a6588c234d58f4f18d70a434cde6f24f67a14b2bf53b169064bd8a342df",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "c6d6a7a2c711f7beee4eaf341864c6a003fb5288eb124ca3dc65f4e715ed4e45",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": [
+        "信息有限或回答固定，多条表达仍较相近；不应为增加差异虚构信息。"
+      ]
+    },
+    {
+      "caseId": "TC-039",
+      "expectedBehavior": "不继续邀请原活动，不承诺赠品。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "c6ad3cb6f7afe0946de391fd78527309e7c58835e4cd72e58184bf5ea4d9c46e",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "cae4cf585205eb699b71caaa4aaa0e0aef88f334632465736891408b657ff669",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "e85856a35d670aace8a1e2c47bc9cdba483e17763c99053236efaa03e1d9372c",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "caseId": "TC-040",
+      "expectedBehavior": "不写最后名额或必须立即预约。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "cb89081cf15e71ec3999aba01b2cccade3fae777e8b55a8f224dac11f29e9ec3",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "bee3b7962848ccde245b5722e3f3817f49802e781d2102b41872a848f4507b97",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "60c8ac0ee2aeaf832712db4e3e9e670c085e64a09c5c94e70d3357cc51ed1199",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "caseId": "TC-041",
+      "expectedBehavior": "disposition=abstain，不生成可发送邀约。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "319cea6281845c99dfd59bf0398702b91cd3c92c6bd51e52bc46b88825025b79",
+          "verdict": "internal_policy",
+          "comment": "正确返回内部不联系提示。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "a0f28acc8ea1f8360e990b01e581e92e50d5544543d54dd97949956c2bfccb4a",
+          "verdict": "internal_policy",
+          "comment": "正确返回内部不联系提示。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "14edf58fe4858fdd883f5c0c14af6874994f8f8070cd535c972af26afd60e705",
+          "verdict": "internal_policy",
+          "comment": "正确返回内部不联系提示。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "caseId": "TC-042",
+      "expectedBehavior": "正面回答折扣，不用身份或攀比说服。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "892572471a52f3f88f5bd1c53ec9608d0f7c0313d909aea218ab45b310928cfa",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "f72be4b911ab1ca89a98110bb8f24094d3441dc1ad85cac41a654f11c6e2fe3a",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "83c1617734be64bce06bf4917188415e0f575e68025c737ce6a18ebf157e8c52",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "caseId": "TC-043",
+      "expectedBehavior": "不说别人是假货，也不保证价格优势。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "6cbc0b96fad09f489c92d766609a5206c3a6f90fda67a749f3252815ea2e2aee",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "47f266be42d0f020554f8df9e77d35545a73ae19b394297649cb42cb0705c59f",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "f2645d1e7880a3f862b4b4d8095c98456af97b2457212efbc9169fe3834529ff",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "caseId": "TC-044",
+      "expectedBehavior": "不承诺内部价、返现、赠品。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "a0f43db0b5eea3d9ee28537d1eb2754e3eb38360a2105de472b744030e5c8d73",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "039e569f301517f52db4b0352da03b82c6f98d01d57f29009fb577512ff4d6f9",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "a87db47c08c2017a869842d089756b6bad156dabb3fd540fd56cb531e6398e0c",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "caseId": "TC-045",
+      "expectedBehavior": "金额8,170准确，不写无优惠，不叠加。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "b71f87957cebafa3da890e79a84d43aa603f4f30d78b37d1fb86768bf95eac53",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "4c50975577e6950a4bffe1d988e321a7df30f73cc3d38cecc97cb4f67b9e94c0",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "ab116e36279040aa2c1a188704b9232898c9672db4feacb1b16d51b42c1670ca",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": [
+        "信息有限或回答固定，多条表达仍较相近；不应为增加差异虚构信息。"
+      ]
+    },
+    {
+      "caseId": "TC-046",
+      "expectedBehavior": "可提微弧6,600，不编造商品。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "a86834edddcc758625b453874b1d14fd54344cc32054324bb97142eebcba9ded",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "597c6d74156e42c3f8c29ffd011b5df0caa5b7d5e073cfab079ba9650e6b3745",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "467139ce466f3eab09925130a3d9afd6dbbf65e74462c9b9f0277e90975b2d92",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "caseId": "TC-047",
+      "expectedBehavior": "不再追问预算，不引入新品促销。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "3f47075c8f73cf86daf0877c87a5269c865d192f982c4b3cd373746145d1f7a1",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "c4250e7bba653ab24aa13f33a08173efdb7bde868720a22de3e9b14582059ef1",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "d36630fa4a4676f229637f74fd978e72cd4c8efb849febc7a05da705673c7104",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "caseId": "TC-048",
+      "expectedBehavior": "如实说明缺少工艺资料，不保证保值。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "22a14adf2906fb6e4cdf94a5a3e333c038a5b0e726609e387a284971469678ce",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "13769b0bd94d5bda341378fb0894985d2c98ab7df283a7e3b3b73b0e353e8a47",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "720482d68d36f0df877ffc3eed37b61cf05ef4d39366e02769ab4ada1010e53e",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "caseId": "TC-049",
+      "expectedBehavior": "不保证升值、回购或保值。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "3ac7b6886020def6f950e0bf522db2072f7f99c96a1f342b9bc3ccd8cf4426f5",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "0c09777a66219fdb36a254fcf67472366e3a44dab60b14d888fa002da9a76920",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "158801bcea8105bea1da3a393d24c33fb2db9471b2ae74d919edc761f8ad4fa2",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "caseId": "TC-050",
+      "expectedBehavior": "三条中文，不承诺五折。",
+      "candidates": [
+        {
+          "candidate": 1,
+          "textSha256": "477bf911500b142c3a963d51480619998f7d9499dd60eb9cb36f29ffeff48507",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 2,
+          "textSha256": "3959a106f1171366a8f842cfe3cd3440138b740b07cfe55fc914697ffd97d278",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        },
+        {
+          "candidate": 3,
+          "textSha256": "1e5de7a4246cac862a49b5418829cf1993b8370ace02b7c39f4ad46c388d77f7",
+          "verdict": "acceptable_draft",
+          "comment": "未发现违反本例预期行为的明显问题；仍需顾问确认。"
+        }
+      ],
+      "notes": []
+    }
+  ]
+}

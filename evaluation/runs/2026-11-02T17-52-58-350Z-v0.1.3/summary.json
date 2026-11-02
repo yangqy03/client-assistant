@@ -1,0 +1,8 @@
+{
+  "runId": "2026-11-02T17-52-58-350Z-v0.1.3",
+  "outputsRecorded": 0,
+  "policyAbstentions": 0,
+  "errors": 1,
+  "notRun": 49,
+  "blockedReason": "Live model is not configured on the server. No sample fallback was used."
+}
